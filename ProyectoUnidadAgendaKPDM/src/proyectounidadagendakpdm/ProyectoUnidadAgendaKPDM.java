@@ -8,34 +8,33 @@ número de teléfono, nombre y domicilio. Para buscar un contacto se debe realiz
 número de teléfono.*/
 public class ProyectoUnidadAgendaKPDM {
 
+    static int contador = 0;
+
     public static void main(String[] args) {
         int op = 0;
         Scanner entrada = new Scanner(System.in);
-        System.out.println("--------- MENU ---------");
-        System.out.println("1. Guardar Contacto");
-        System.out.println("2. Ver Todos Los Contactos");
-        System.out.println("3. Buscar un Contacto");
-        System.out.println("4. Salir");
-        System.out.println("");
-        System.out.println("Ingrese el numero de opcion:");
-        op = entrada.nextInt();
-        System.out.println("------------------------------------");
-        if (op == 1) {
+        while (op != 4) {
+            System.out.println("--------- MENU ---------");
+            System.out.println("1. Guardar Contacto");
+            System.out.println("2. Ver Todos Los Contactos");
+            System.out.println("3. Buscar un Contacto");
+            System.out.println("4. Salir");
+            System.out.println("");
+            System.out.println("Ingrese el numero de opcion:");
+            op = entrada.nextInt();
+            System.out.println("------------------------------------");
+            if (op == 1) {
+                System.out.println("----- Nuevo Contacto -----");
+            } else if (op == 2) {
+                System.out.println("----- Los Datos Del Contacto Son: -----");
+            } else if (op == 3) {
+                System.out.println("Progama Finalizado");
+            } else {
+                System.out.println("Opcion incorrecta");
 
-        } else if (op == 2) {
-
-            System.out.println("----- Los Datos Del Contacto Son: -----");
-
-        } else if (op == 3) {
-
-            System.out.println("Progama Finalizado");
-
-        } else {
-
-            System.out.println("Opcion incorrecta");
+            }
 
         }
-
     }
 
     static public void guardarContacto() {
@@ -49,7 +48,6 @@ public class ProyectoUnidadAgendaKPDM {
             System.out.println("---------------------------------------");
 
         } else {
-
             Scanner teclado = new Scanner(System.in);
 
             System.out.println("-------------- Nuevo Contacto --------------");
