@@ -6,6 +6,7 @@ import java.util.Scanner;
 El programa debe ser capaz de almacenar 15 contactos, las características de cada contacto son
 número de teléfono, nombre y domicilio. Para buscar un contacto se debe realizar a través del
 número de teléfono.*/
+//Proyecto finalizado :D
 public class ProyectoUnidadAgendaKPDM {
 
     static Contactos misContactos[] = new Contactos[15];
