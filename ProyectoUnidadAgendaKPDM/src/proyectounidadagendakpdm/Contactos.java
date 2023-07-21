@@ -6,25 +6,23 @@ public class Contactos {
     private String nombre, domicilio, numerotel;
 
     public Contactos(String nombre, String domicilio, String numerotel) {
-
         this.nombre = nombre;
         this.domicilio = domicilio;
         this.numerotel = numerotel;
-
     }
-
     public String verNombre() {
         return this.nombre;
-
     }
-
     public String verDomicilio() {
         return this.domicilio;
-
     }
-
     public String verNumero() {
         return this.numerotel;
-
+    }
+    public void cambiarNom(String nombre){
+        this.nombre = nombre;
+    }
+    public void cambiarDom(String domicilio){
+        this.domicilio = domicilio;
     }
 }
